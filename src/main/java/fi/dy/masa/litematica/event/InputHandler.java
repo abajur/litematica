@@ -66,7 +66,7 @@ public class InputHandler implements IKeybindProvider, IMouseInputHandler
         return false;
     }
 
-    private boolean handleMouseScroll(double dWheel, Minecraft mc)
+    private boolean handleMouseScroll(int dWheel, Minecraft mc)
     {
         EntityPlayer player = mc.player;
         boolean toolEnabled = Configs.Visuals.ENABLE_RENDERING.getBooleanValue() && Configs.Generic.TOOL_ITEM_ENABLED.getBooleanValue();
